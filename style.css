@@ -114,23 +114,28 @@ header a::after{
 }
 .col .met .wallet{
     margin: auto;
-    width: 75%;
+    /* width: 75%; */
     padding: 0rem 3rem;
 }
 .col .met .wallet a{
-    display: flex;
+    margin: auto;
+    width: 70%;
+    display: block;
     color: wheat;
     background-color: black;
     padding: 0.5rem;
     font-size: 14px;
     border-radius: 7px;
 }
-.col .met .wallet a div{
-    display: flex;
-    /* align-items: center; */
-}
 .col .met .wallet a img{
     width: 1.5rem;
+    padding-right: 3px;
+}
+.col .met .wallet a span{
+    margin: auto;
+    width: 165px;
+    display: flex;
+    align-items: center;
 }
 .col .met .tick{
     display: inline-flex;
@@ -149,6 +154,17 @@ header a::after{
     padding: 0.5rem;
     background-color: #0561de;
     border-radius: 0px 0px 20px 20px ;
+}
+.col .met .verif img{
+    width: 0.8rem;
+    padding-right: 2px;
+}
+.col .met .verif i{
+    width: 139px;
+    /* background-color: aqua; */
+    margin: auto;
+    display: flex;
+    align-items: center;
 }
 .circle{
     margin: auto;
@@ -350,3 +366,39 @@ input::placeholder{
 /* .ticket.active{
     display: block;
 } */
+@media(max-width: 490px){
+    .col .head{
+        font-size: 10px;
+        padding: 5px;
+    }
+    .col .sec{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+    }
+    .col .sec .sec-1 span{
+        display: block;
+        padding: 1.5px;
+        font-size: 9px;
+    }
+    .col .met .wallet a{
+        width: 150px;
+        padding: 0.5rem;
+        font-size: 10px;
+    }
+    .col .met .wallet a span{
+        width: 170px;
+    }
+    .col .row .rowtex{
+        padding-top: 10rem;
+        padding-bottom: 4px;
+    }
+    .col .row .rowtex h3, .col .row .rowtex p{
+        font-size: 13px;
+    }
+    .col .met .tick a{
+        font-size: 12px;
+        padding: 0.5rem;
+    }
+}

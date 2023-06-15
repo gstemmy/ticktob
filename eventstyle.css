@@ -9,7 +9,7 @@
     list-style: none;
 }
 body{
-    padding: 0px 50px 50px;
+    padding: 0px 50px;
     font-family: 'Poppins', sans-serif;
 }
 header{
@@ -32,7 +32,13 @@ header{
     margin: auto;
 }
 .row{
-text-align: center;
+    /* background-color: #0561de; */
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: 0;
+    right: 0;
+    padding: 0 0 5px;
 }
 .row ul{
     display: flex;
@@ -75,11 +81,12 @@ text-align: center;
     background-image: url(tobbb.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 35vh;
-    max-width: 300px;
+    height: 35vh;
+    width: 300px;
     padding-top: 10rem;
     color: #ffffff;
-}.row ul li a i.bxs-purchase-tag-alt{
+}
+.row ul li a i.bxs-purchase-tag-alt{
     transform: rotate(90deg);
 }
 .col .backcolor{
@@ -96,4 +103,13 @@ text-align: center;
 .col .backcolor p:nth-child(3){
     font-size: 12px;
     width: 100%;
+}
+@media(max-width: 490px){
+    .row{
+        padding: 0 20px;
+    }
+    .col .rowtex{
+        max-width: 300px;
+        /* background-image: none; */
+    }
 }
