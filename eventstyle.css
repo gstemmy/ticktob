@@ -104,6 +104,9 @@ header{
     font-size: 12px;
     width: 100%;
 }
+.backcolor p sup{
+    font-size: 9px;
+}
 @media(max-width: 490px){
     .row{
         padding: 0 20px;
